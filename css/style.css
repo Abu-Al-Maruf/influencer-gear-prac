@@ -28,6 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
 }
 .nav-bar ul li {
   list-style: none;
@@ -38,13 +39,55 @@ header {
   color: #3a3a3a;
   font-size: 16px;
   font-weight: 600;
-  transition: color .3s;
+  transition: color 0.3s;
 }
-.nav-bar ul li:hover a{
-    color: var(--primary-color);
+.nav-bar ul li:hover a {
+  color: var(--primary-color);
 }
 .nav-bar h2 {
   color: #3a3a3a;
   font-size: 24px;
   font-weight: 700;
+}
+.header-main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-left h1 {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.main-left p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-preebook {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 24px;
+  background: var(--primary-color);
+  border-radius: 40px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  margin-top: 15px;
+  transition: .3s ease-in-out;
+}
+.btn-preebook:hover{
+  color: var(--primary-color);
+  background: #fff;
+}
+.btn-preebook>i{
+  margin-left: 8px;
+}
+.main-right{
+  background-image: url('../images/circle.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 95%;
 }
