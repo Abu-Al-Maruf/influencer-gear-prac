@@ -91,3 +91,122 @@ header {
   background-position: center;
   background-size: 95%;
 }
+.mobile-cart{
+  display: none;
+}
+#close{
+  display: none;
+}
+#mobile{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+/* media query  */
+/* media query  */
+
+@media screen and (max-width: 768px) {
+  
+  header{
+    padding: 35px 20px;
+  }
+  .header-main{
+    flex-direction: column-reverse;
+  }
+  .nav-bar ul{
+    flex-direction: column;
+  }
+  .main-right{
+    width: 80%;
+  }
+  .main-right img{
+    width: 100%;
+  }
+  .main-left{
+    text-align: center;
+  }
+  .main-left h1{
+  font-size: 28px;
+  line-height: normal;
+  }
+  .main-left p{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .btn-preebook{
+    margin-top: 30px;
+  }
+  .nav-bar{
+    flex-direction: row-reverse;
+
+  }
+  .nav-bar ul{
+    position: fixed;
+    justify-content: flex-start;
+    align-items: flex-start;
+    top: 0px;
+    left: -300px;
+    background-color: #f7f0ff;
+    width: 200px;
+    height: 100vh;
+    padding: 40px;
+    transition: .3s;
+    margin-top: 0;
+  }
+#nav.active{
+    left: 0;
+  }
+  .nav-bar ul li{
+    margin-top: 25px;
+  }
+  #mobile{
+    display: initial;
+  }
+  #close{
+    display: initial;
+    width: 24px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .cart{
+    display: none;
+  }
+  #menu{
+    cursor: pointer;
+  }
+  .mobile-cart{
+    display: initial;
+    text-decoration: none;
+    color: initial;
+    width: 24px;
+    cursor: pointer;
+  }
+  .nav-bar h2{
+    font-size: 18px;
+    line-height: normal;
+  }
+}
